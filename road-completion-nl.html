@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NWB versus OSM</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin=""/>
+</head>
+<body>
+    <div id="map"></div>
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+        integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+    <!-- Plugins -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js" integrity="sha256-kmsDsaE/T0gIJXfV7sZF1SwQAdO2AU5DAkZwwnx46n4=" crossorigin="anonymous" type="text/javascript"></script>
+    <script src='js/leaflet-fullHash.js'></script>
+    <script>
+        var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        });
+        var luchtfoto = L.tileLayer('https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts?FORMAT=image/jpeg&SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Actueel_ortho25&STYLE=&FORMAT=image/jpeg&tileMatrixSet=OGC:1.0:GoogleMapsCompatible&tileMatrix={z}&tileRow={y}&tileCol={x}', {
+            attribution: 'Luchtfoto by Kadaster under <a href="http://creativecommons.org/licenses/by/4.0/deed.nl">CC-BY 4.0</a>'
+        });
+        var brt = L.tileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=brtachtergrondkaart&STYLE=&FORMAT=image/png&tileMatrixSet=EPSG:3857&tileMatrix={z}&tileRow={y}&tileCol={x}', {
+            attribution: 'BRT by Kadaster under <a href="http://creativecommons.org/licenses/by/4.0/deed.nl">CC-BY 4.0</a>'
+        });
+        var nwb = L.tileLayer.wms('https://geodata.nationaalgeoregister.nl/nwbwegen/wms?', {
+            attribution: 'NWB by Rijkswaterstaat under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.nl">CC-0 1.0</a>',
+            color: '#caf248',
+            format: 'image/png',
+            transparent: true,
+            layers: 'wegvakken',
+            minZoom: 14
+        });
+
+        function popUp(f,l){
+            var out = [];
+            if (f.properties){
+                for(key in f.properties){
+                    out.push(key+": "+f.properties[key]);
+                }
+                l.bindPopup(out.join("<br />"));
+            }
+            l.setStyle({color :'#caf248', dashArray: '5, 5'});
+        }
+        var missingnwb = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/osmbe/road-completion/master/data/netherlands/difference/diff.geojson",{
+            attribution: 'NWB by Rijkswaterstaat under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.nl">CC-0 1.0</a>, analysis <a href="https://github.com/osmbe/road-completionl">OSM Belgium</a>',
+            onEachFeature: popUp
+        });
+
+        var osmroads = L.tileLayer('https://api.mapbox.com/styles/v1/joostschouppe/cir5a9eob0020ccm0gc0xsqd0/tiles/256/{z}/{x}/{y}?access_token={accessToken}', {
+            accessToken: 'pk.eyJ1Ijoiam9vc3RzY2hvdXBwZSIsImEiOiJjaWh2djF1c2owMmJrdDNtMWV2c2Rld3QwIn0.9zXJJWZ4rOcspyFIdEC3Rw',
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18
+        });
+        var osmgpx = L.tileLayer('https://gps-a.tile.openstreetmap.org/lines/{z}/{x}/{y}.png', {
+            attribution: 'GPX data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        });
+        var mapillary  = L.tileLayer('https://d6a1v2w10ny40.cloudfront.net/v0.1/{z}/{x}/{y}.png', {
+            attribution: '<a href="http://www.mapillary.com/">Mapillary</a>'
+        });
+
+        var allMapLayers = {
+            'osm': osm,
+            'luchtfoto': luchtfoto,
+            'brt': brt,
+            'osmroads': osmroads,
+            'nwb': nwb,
+            'missingnwb': missingnwb,
+            'osmgpx': osmgpx,
+            'mapillary': mapillary
+        };
+
+        var map = L.map('map', {
+            center: [52,5],
+            zoom: 12,
+            layers: [osm, missingnwb]
+        });
+
+        var hash = new L.Hash(map, allMapLayers);
+
+        var basemaps = {
+            "OSM": osm,
+            "Luchtfoto": luchtfoto,
+            "Basiskaart BRT": brt
+        };
+
+        var overlays = {
+            "OSM Roads": osmroads,
+            "NWB": nwb,
+            "Missing NWB": missingnwb,
+            "OSM gpx": osmgpx,
+            "Mapillary coverage": mapillary
+        };
+
+        L.control.layers(basemaps,overlays).addTo(map);
+    </script>
+</body>
+</html>
