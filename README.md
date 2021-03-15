@@ -1,3 +1,3 @@
-robinlinde.github.io
-====================
-This is the repository of the github page
+# RobinLinde.github.io
+
+This repository contains my personal github.io page, mostly used for testing
