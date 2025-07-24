@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"839650","Type":"Q","DHID":"de:15085:1956::01","Parent":"de:15085:1956","Name":"Steig 01","Latitude":"51,883298","Longitude":"11,037467","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NASA","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":11.037467,"geojson_lat":51.883298},"geometry":{"type":"Point","coordinates":[11.037467,51.883298]}}]}

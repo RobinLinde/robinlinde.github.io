@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"831835","Type":"Q","DHID":"de:15002:3943::91","Parent":"de:15002:3943","Name":"Steig 91","Latitude":"51,461041","Longitude":"11,988047","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NASA","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":11.988047,"geojson_lat":51.461041},"geometry":{"type":"Point","coordinates":[11.988047,51.461041]}}]}

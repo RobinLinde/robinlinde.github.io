@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"65019","Type":"A","DHID":"de:08317:18601:51","Parent":"de:08317:18601","Name":"P+R Südwest","Latitude":"48,273077","Longitude":"7,789319","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":7.789319,"geojson_lat":48.273077},"geometry":{"type":"Point","coordinates":[7.789319,48.273077]}}]}

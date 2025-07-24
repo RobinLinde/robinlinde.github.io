@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"580619","Type":"Q","DHID":"de:05358:2415:2:2","Parent":"de:05358:2415:2","Name":"-","Latitude":"50,827602","Longitude":"6,415911","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"VRR","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":6.415911,"geojson_lat":50.827602},"geometry":{"type":"Point","coordinates":[6.415911,50.827602]}}]}

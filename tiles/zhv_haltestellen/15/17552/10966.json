@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"826206","Type":"Q","DHID":"de:14522:60389:0:BW","Parent":"de:14522:60389","Name":"Bus West","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"Bus West","Authority":"VVO","DelfiName":"-","THID":"-","LastOperationDate":"","SEV":"nein","longitude":"12,843142","latitude":"51,026542","geojson_lng":12.843142,"geojson_lat":51.026542},"geometry":{"type":"Point","coordinates":[12.843142,51.026542]}}]}
+{"type":"FeatureCollection","features":[]}

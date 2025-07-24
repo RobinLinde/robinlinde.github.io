@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"104003","Type":"Q","DHID":"de:09775:4921:0:1","Parent":"de:09775:4921","Name":"Langenau","Latitude":"48,437605","Longitude":"10,052714","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":10.052714,"geojson_lat":48.437605},"geometry":{"type":"Point","coordinates":[10.052714,48.437605]}}]}

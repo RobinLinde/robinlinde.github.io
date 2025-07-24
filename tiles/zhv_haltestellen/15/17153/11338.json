@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"53629","Type":"Q","DHID":"de:08237:3516:0:2","Parent":"de:08237:3516","Name":"Mast 2","Latitude":"48,3807","Longitude":"8,448404","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":8.448404,"geojson_lat":48.3807},"geometry":{"type":"Point","coordinates":[8.448404,48.3807]}}]}

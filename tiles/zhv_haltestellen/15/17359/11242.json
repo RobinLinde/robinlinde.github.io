@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"232697","Type":"Q","DHID":"de:09577:16188:0:3","Parent":"de:09577:16188","Name":"3","Latitude":"49,074206","Longitude":"10,720117","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"BEG","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":10.720117,"geojson_lat":49.074206},"geometry":{"type":"Point","coordinates":[10.720117,49.074206]}}]}

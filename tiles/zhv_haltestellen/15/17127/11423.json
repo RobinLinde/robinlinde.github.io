@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"79435","Type":"Q","DHID":"de:08337:5567:0:2","Parent":"de:08337:5567","Name":"Ri. Westen","Latitude":"47,753992","Longitude":"8,168273","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":8.168273,"geojson_lat":47.753992},"geometry":{"type":"Point","coordinates":[8.168273,47.753992]}}]}

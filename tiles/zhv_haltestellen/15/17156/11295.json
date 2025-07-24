@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"49958","Type":"Q","DHID":"de:08235:440:0:3","Parent":"de:08235:440","Name":"Ri. Bad Wildbad","Latitude":"48,694562","Longitude":"8,48139","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":8.48139,"geojson_lat":48.694562},"geometry":{"type":"Point","coordinates":[8.48139,48.694562]}}]}

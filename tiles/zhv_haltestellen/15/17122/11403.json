@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"58547","Type":"A","DHID":"de:08315:6542:50","Parent":"de:08315:6542","Name":"P+R Südost","Latitude":"47,905116","Longitude":"8,108176","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":8.108176,"geojson_lat":47.905116},"geometry":{"type":"Point","coordinates":[8.108176,47.905116]}}]}

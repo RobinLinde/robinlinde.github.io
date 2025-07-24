@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"87704","Type":"Q","DHID":"de:08421:1192:0:2","Parent":"de:08421:1192","Name":"Steig A","Latitude":"48,450989","Longitude":"10,023186","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":10.023186,"geojson_lat":48.450989},"geometry":{"type":"Point","coordinates":[10.023186,48.450989]}}]}

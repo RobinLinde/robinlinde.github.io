@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"102663","Type":"Q","DHID":"de:09775:1779:0:2","Parent":"de:09775:1779","Name":"Ulm","Latitude":"48,35413","Longitude":"10,01936","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":10.01936,"geojson_lat":48.35413},"geometry":{"type":"Point","coordinates":[10.01936,48.35413]}}]}

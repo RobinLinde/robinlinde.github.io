@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"49614","Type":"Q","DHID":"de:08235:1500:0:5","Parent":"de:08235:1500","Name":"Siedlung","Latitude":"48,690773","Longitude":"8,838821","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":8.838821,"geojson_lat":48.690773},"geometry":{"type":"Point","coordinates":[8.838821,48.690773]}}]}

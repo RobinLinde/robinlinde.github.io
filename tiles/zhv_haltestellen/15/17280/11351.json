@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"84574","Type":"Q","DHID":"de:08425:3661:0:1","Parent":"de:08425:3661","Name":"auswärts","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"auswärts","Authority":"NVBW","DelfiName":"-","THID":"-","LastOperationDate":"","SEV":"nein","longitude":"9,850782","latitude":"48,290461","geojson_lng":9.850782,"geojson_lat":48.290461},"geometry":{"type":"Point","coordinates":[9.850782,48.290461]}}]}
+{"type":"FeatureCollection","features":[]}

@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"484562","Type":"Q","DHID":"de:13003:928:1:2","Parent":"de:13003:928:1","Name":"0110691","Latitude":"54,117474","Longitude":"12,102651","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"VMV","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":12.102651,"geojson_lat":54.117474},"geometry":{"type":"Point","coordinates":[12.102651,54.117474]}}]}

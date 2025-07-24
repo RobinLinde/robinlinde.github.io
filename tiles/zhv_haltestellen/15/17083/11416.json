@@ -1,1 +1,1 @@
-{"type":"FeatureCollection","features":[]}
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"SeqNo":"57230","Type":"Q","DHID":"de:08315:5463:1:2","Parent":"de:08315:5463:1","Name":"Ri Haldenhof","Latitude":"47,808639","Longitude":"7,690486","MunicipalityCode":"00000000","Municipality":"-","DistrictCode":"-","District":"-","Description":"","Authority":"NVBW","DelfiName":"-","THID":"-","TariffProvider":"-","LastOperationDate":"","SEV":"nein","geojson_lng":7.690486,"geojson_lat":47.808639},"geometry":{"type":"Point","coordinates":[7.690486,47.808639]}}]}
